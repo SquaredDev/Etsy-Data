@@ -52,6 +52,15 @@ function question3 () {
 // 4: Display a list of all items who are made of wood.
 function question4 () {
   // Answer:
+  let wooden = ""
+  for (var i = 0; i < data.length; i++) {
+    for (var j = 0; j < data[i].materials.length; j++) {
+      if (data[i].materials[j] === "wood") {
+        wooden = wooden + data[i].title + "\n"
+      }
+    }
+  }
+  return wooden
 }
 
 
@@ -59,6 +68,7 @@ function question4 () {
 //    Display the name, number of items and the items it is made of.
 function question5 () {
   // Answer:
+  
 }
 
 
