@@ -16,9 +16,8 @@ function question1 () {
   avgPrice = ((avgPrice / (data.length)) * 100)
   avgPrice = Math.round(avgPrice)
   avgPrice = (avgPrice / 100)
-  return "The average price is $" + avgPrice
+  console.log( "The average price is $" + avgPrice);
 }
-
 
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
@@ -30,7 +29,7 @@ function question2 () {
       row.push (data[i])
     }
   }
-  return row
+  console.log(row);
 }
 
 
@@ -45,7 +44,7 @@ function question3 () {
       // console.log(i);
     }
   }
-  return gbp;
+  console.log(gbp);
 }
 
 
@@ -60,7 +59,7 @@ function question4 () {
       }
     }
   }
-  return wooden
+  console.log(wooden);
 }
 
 
@@ -74,7 +73,7 @@ function question5 () {
       eightOrMore = eightOrMore + data[i].title + "\n"
       }
   }
-  return eightOrMore
+  console.log(eightOrMore);
 }
 
 // 6: How many items were made by their sellers?
@@ -87,5 +86,5 @@ function question6 () {
       iDid++
       }
   }
-  return iDid + " items were made by their sellers."
+  console.log(iDid + " items were made by their sellers.");
 }
